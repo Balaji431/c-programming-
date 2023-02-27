@@ -1,0 +1,25 @@
+#include <stdio.h>
+  
+// * used to dereference the variable
+void change(int* num)
+{
+  // value of num changed to 30
+  *num = 30; 
+}
+  
+// Driver code
+int main()
+{
+  int num = 20;
+  printf("Value of num before passing is: %d\n", 
+          num);
+    
+  // Calling change function by passing address
+  change(&num);
+    
+  printf("Value of num after changing with the help of "
+         "function is: %d", num);
+    
+  return 0;
+}
+Footer
