@@ -1,0 +1,30 @@
+#include<stdio.h>
+struct student
+{
+	int roll_no;
+	char name[20];
+	int marks;
+};
+main()
+{
+struct student a[20];
+int i,j,k,l;
+printf("the number of students you want to register:");
+scanf("%d",&l);
+for(i=0;i<l;i++)
+{
+	printf("enter the rollno:");
+	scanf("%d",&a[i].roll_no);
+	printf("enter the name:");
+	scanf("%d",&a[i].name);
+	printf("enter the marks:");
+	scanf("%d",&a[i].marks);
+	printf("\n");
+	printf("student %d registered\n",i+1);
+	printf("\n");
+}
+printf("data registered successfully\n");
+printf("\n");
+printf("the stored data:\n");
+printf("\n\n");
+}
